@@ -1,19 +1,19 @@
 {
-  "initialSlug": "001",
-  "planetPath": "/planet.webm",
-  "animate": true,
-  "defaultTitle": "MSMC |",
-  "icon": "/faction-logos/msmc.svg",
-  "header": {
-    "planet": "Heiligtum-6 'Deep Blue'",
-    "year": "5017u",
-    "system": "Heiligtum",
-    "gate": "Rào Cỏ",
-    "ring": "Annamite",
-    "headerTitle": "Mirrorsmoke",
-    "headerSubtitle": "Mercenary Company",
-    "subheaderTitle": "Contract Work",
-    "subheaderSubtitle": "Sierra-Whiskey-Alpha-Golf"
-  },
-  "pilotSpecialInfo": {}
+	"initialSlug": "001",
+	"planetPath": "/planet.webm",
+	"animate": true,
+	"defaultTitle": "Union |",
+	"icon": "/faction-logos/union.svg",
+	"header": {
+		"planet": "Outer Plane",
+		"year": "5021u",
+		"system": "Huygens",
+		"gate": "Cerro Barajas",
+		"ring": "Sierra Madre",
+		"headerTitle": "Placeholder",
+		"headerSubtitle": "Squadron",
+		"subheaderTitle": "Union Auxiliaries",
+		"subheaderSubtitle": "Twilight Liberators"
+	},
+	"pilotSpecialInfo": {}
 }

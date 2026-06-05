@@ -11,9 +11,9 @@
 		<div id="app"></div>
 		<script type="module" src="/src/main.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-		<script type="module" src="/src/assets/scripts/vanta.globe.min.js"></script>
+		<script type="module" src="/src/assets/scripts/vanta.net.min.js"></script>
 		<script type="module">
-			VANTA.GLOBE({
+			VANTA.NET({
 				el: "body",
 				mouseControls: false,
 				touchControls: false,
@@ -22,12 +22,11 @@
 				minWidth: 200.0,
 				scale: 1.0,
 				scaleMobile: 1.0,
-				color: 0x694f5d,
-				color2: 0x68a691,
-				backgroundColor: 0x0c090d,
-				size: 2.0,
-				sphereRotation: -0.002,
-				meshRotation: 0.004,
+				color: 0xca4c4c,
+				backgroundColor: 0x111120,
+				points: 20.0,
+				maxDistance: 25.0,
+				showDots: false,
 			});
 		</script>
 	</body>

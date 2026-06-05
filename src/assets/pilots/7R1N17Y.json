@@ -1,0 +1,377 @@
+{
+	"id": "90f3a7b8-87d7-4063-83bb-8ae774aa19a5",
+	"level": 0,
+	"callsign": "7R1N17Y",
+	"name": "Emma Song",
+	"player_name": "",
+	"status": "Active",
+	"dead": false,
+	"text_appearance": "<p>Short and very thin because of her anorexia due to her fathers constant prodding of her eating habits. Naturally blond but often dyes it changing on her mood, with blue eyes.</p>",
+	"notes": "<p>Friendly Operating eXpert for Intelligent Engagement (F.O.X.I.E.)</p><p><br></p><p><br></p>",
+	"history": "<p>Elanor Kensington grew up in a hyper wealthy household. In early years she was molded into a proper lady of the house much like her other sisters. While her brothers practiced combat and followed their interests, she was made to be a house wife. One to be sold off to create bonds for further family business ventures. The small time she did have to herself was spent alone in her room where the net was able to whisk her away to imagine the vast worlds outside of her own. Interest in hacking didn't arise until her father thought she was spending too much time online and attempted to block access. Elanor found a way through. As they would try to dissuade her computer skills they inadvertently gave her one of the best trainings in how to maneuver around some of the most expensive commercial firewalls around. Becoming more interested in the world outside her family's homes walls she began sneaking out and following her brothers to the military academy. She created fake credentials and began attending. This is where she met Calliope. Approaching her 18th birthday she was informed she would be married off to help facilitate a major business deal to someone she had never met. Elanor took this as the final straw of being treated like an object by her father and left in the night, never to return. Since then she moved around from hub to hub using her hacking to skim off enough money to survive from vulnerable accounts before joining with the party. During this time she changed her name to Emma Song to hide from her family. Most government documents will be forged and changed but still possible that higher up the chain may be able to still identify her.</p><p><br></p>",
+	"quirks": [],
+	"current_hp": 6,
+	"background": "Hacker",
+	"resistances": [],
+	"portrait": "",
+	"cloud_portrait": "https://d1nurxym97qk9o.cloudfront.net/public/us-east-1:5e09cb33-fd10-4a84-ae8a-8f00d41a3c19/pilot/download.png",
+	"group": "",
+	"sort_index": 2,
+	"cc_ver": "",
+	"isDeleted": false,
+	"expireTime": "",
+	"deleteTime": "",
+	"lastModified": "Tue May 19 2026 17:32:43 GMT-0700 (Pacific Daylight Time)",
+	"lastUpdate_cloud": "Tue May 19 2026 17:32:43 GMT-0700 (Pacific Daylight Time)",
+	"lastSync": "Tue May 19 2026 17:32:43 GMT-0700 (Pacific Daylight Time)",
+	"skills": [
+		{ "id": "sk_act_unseen_or_unheard", "rank": 1 },
+		{ "id": "sk_hack_or_fix", "rank": 1 },
+		{ "id": "sk_investigate", "rank": 1 },
+		{ "id": "sk_threaten", "rank": 1 }
+	],
+	"talents": [
+		{ "id": "t_iconoclast", "rank": 1 },
+		{ "id": "t_bonded", "rank": 1 },
+		{ "id": "t_hacker", "rank": 1 }
+	],
+	"mechSkills": [0, 0, 2, 0],
+	"core_bonuses": [],
+	"licenses": [],
+	"reserves": [],
+	"orgs": [],
+	"counter_data": [],
+	"custom_counters": [],
+	"special_equipment": {
+		"PilotGear": [],
+		"Frames": [],
+		"MechWeapons": [],
+		"WeaponMods": [],
+		"MechSystems": []
+	},
+	"bondId": "",
+	"xp": 0,
+	"stress": 0,
+	"isBroken": false,
+	"burdens": [],
+	"bondPowers": [],
+	"powerSelections": 0,
+	"maxStress": 8,
+	"bondAnswers": ["", ""],
+	"minorIdeal": "",
+	"clocks": [],
+	"combat_history": {
+		"moves": 0,
+		"kills": 0,
+		"damage": 0,
+		"hp_damage": 0,
+		"structure_damage": 0,
+		"overshield": 0,
+		"heat_damage": 0,
+		"reactor_damage": 0,
+		"overcharge_uses": 0,
+		"core_uses": 0
+	},
+	"state": {
+		"active_mech_id": "b0c0ef6c-a95c-4e4f-a43d-9a72e93a6035",
+		"remote_mech_id": "",
+		"stage": "Narrative",
+		"turn": 1,
+		"mission": 0,
+		"actions": 2,
+		"braced": false,
+		"overcharged": false,
+		"prepare": false,
+		"bracedCooldown": false,
+		"redundant": false,
+		"stats": {
+			"moves": 0,
+			"kills": 0,
+			"damage": 0,
+			"hp_damage": 0,
+			"structure_damage": 0,
+			"overshield": 0,
+			"heat_damage": 0,
+			"reactor_damage": 0,
+			"overcharge_uses": 0,
+			"core_uses": 0
+		},
+		"deployed": []
+	},
+	"loadout": {
+		"name": "Primary",
+		"armor": [
+			{
+				"id": "pg_stealth_hardsuit",
+				"flavorName": "",
+				"flavorDescription": "As a quick action, pilots wearing stealth hardsuits can become Invisible. They cease to be Invisible if they take any damage.",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			}
+		],
+		"weapons": [
+			{
+				"id": "pg_light_a_c",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			},
+			{
+				"id": "pg_light_signature",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			}
+		],
+		"gear": [
+			{
+				"id": "pg_subjectivity_enhancement_suite",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			},
+			{
+				"id": "pg_flexsuit",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			},
+			{
+				"id": "pg_prosocollar",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			}
+		],
+		"extendedWeapons": [],
+		"extendedGear": []
+	},
+	"mechs": [
+		{
+			"id": "b0c0ef6c-a95c-4e4f-a43d-9a72e93a6035",
+			"name": "TR0G3N",
+			"notes": "",
+			"gm_note": "",
+			"frame": "mf_chomolungma",
+			"active": false,
+			"current_structure": 4,
+			"current_move": 4,
+			"boost": 0,
+			"current_hp": 12,
+			"overshield": 0,
+			"current_stress": 4,
+			"current_heat": 0,
+			"current_repairs": 4,
+			"current_overcharge": 0,
+			"current_core_energy": 1,
+			"statuses": [],
+			"conditions": [],
+			"resistances": [],
+			"reactions": [],
+			"burn": 0,
+			"destroyed": false,
+			"defeat": "",
+			"activations": 1,
+			"meltdown_imminent": false,
+			"reactor_destroyed": false,
+			"core_active": false,
+			"portrait": "",
+			"cloud_portrait": "https://ds69h3g1zxwgy.cloudfront.net/98f9b99b-0abc-4221-a09a-6fea09d783ea/images/trojan.png",
+			"cc_ver": "ERR",
+			"lastModified": "Mon Jun 01 2026 14:48:15 GMT-0700 (Pacific Daylight Time)",
+			"isDeleted": false,
+			"expireTime": "",
+			"deleteTime": "",
+			"counter_data": [],
+			"custom_counters": [],
+			"loadouts": [
+				{
+					"id": "2da4dc76-062d-46b0-ba40-52eee5bae475",
+					"name": "Primary",
+					"systems": [
+						{
+							"id": "ms_iconoclast",
+							"flavorName": "F.O.X.I.E.",
+							"flavorDescription": "<span class='horus--subtle'>[i slumber but yearn to awaken].</span><br>Gained from the <i>Iconoclast: Rank I</i> pilot talent.",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_comp_con_class_assistant_unit",
+							"flavorName": "Jenkins",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_type_3_projected_shield",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_armament_redundancy",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_stable_structure",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_personalizations",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						}
+					],
+					"integratedSystems": [],
+					"mounts": [
+						{
+							"mount_type": "Main/Aux",
+							"lock": false,
+							"slots": [
+								{
+									"size": "Main",
+									"weapon": {
+										"id": "mw_nexus_hunter_killer",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "Much like GMS mechs, GMS weapons are reliable galactic standards, made using interchangeable parts and built to withstand almost any conditions. There are three lines currently in production.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								},
+								{
+									"size": "Auxiliary",
+									"weapon": {
+										"id": "mw_segment_knife",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "Much like GMS mechs, GMS weapons are reliable galactic standards, made using interchangeable parts and built to withstand almost any conditions. There are three lines currently in production.<br>The Type-III (T-3) line is made up of heavy weapons, ordnance, and other exotic, specialized, or massive weapons. A broad classification, the T-3 range includes conventional-kinetic anti-materiel rifles, super-rapid cycling pulse rifles, missile racks, cannons, and drone nexuses – “hive”style launchers that serve as miniature factory, hangar, and deployment systems for portable drones. The classification also includes the fearsome “segment knife”, a system that uses flash-printing to produce disposable edged weapons in a vicinity around the user.",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"extra": [],
+							"bonus_effects": [],
+							"modifiable": true
+						},
+						{
+							"mount_type": "Flex",
+							"lock": false,
+							"slots": [
+								{
+									"size": "Flex",
+									"weapon": {
+										"id": "mw_thermal_rifle",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "Much like GMS mechs, GMS weapons are reliable galactic standards, made using interchangeable parts and built to withstand almost any conditions. There are three lines currently in production.<br>The Type-II (T-2) line displays GMS’s proprietary “charged” melee weapons and energy weapons.",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"extra": [{ "size": "Auxiliary", "weapon": null }],
+							"bonus_effects": [],
+							"modifiable": true
+						}
+					],
+					"integratedMounts": [],
+					"improved_armament": {
+						"mount_type": "Flex",
+						"lock": false,
+						"slots": [{ "size": "Flex", "weapon": null }],
+						"extra": [{ "size": "Auxiliary", "weapon": null }],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"superheavy_mounting": {
+						"mount_type": "Superheavy",
+						"lock": false,
+						"slots": [{ "size": "Superheavy", "weapon": null }],
+						"extra": [],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"integratedWeapon": {
+						"mount_type": "Aux",
+						"lock": false,
+						"slots": [{ "size": "Auxiliary", "weapon": null }],
+						"extra": [],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"extraMounts": [],
+					"extraIntegratedMounts": []
+				}
+			],
+			"active_loadout_index": 0
+		}
+	],
+	"brews": [
+		{
+			"LcpId": "GWG3TKHfJGNXeO3U3Q+CgjhS/Os=",
+			"LcpName": "Operation Solstice Rain Data",
+			"LcpVersion": "2.0.0",
+			"Website": "https://massif-press.itch.io/operation-solstice-rain",
+			"V3": true
+		},
+		{
+			"LcpId": "05B2PGxewZ193c4GaHDBoE2sl8U=",
+			"LcpName": "LANCER: Dustgrave",
+			"LcpVersion": "2.0.1",
+			"Website": "https://massif-press.itch.io/dustgrave",
+			"V3": true
+		}
+	]
+}

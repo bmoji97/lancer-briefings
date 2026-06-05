@@ -1,2 +1,20 @@
 [
+	{
+		"id": "reserve_time",
+		"name": "Time",
+		"type": "Resource",
+		"description": "Command has given you plenty of time to complete your objectives, given no unforseen complications."
+	},
+	{
+		"id": "reserve_supplies",
+		"name": "Supplies",
+		"type": "Resource",
+		"description": "Union has ensured that you are well supplied for the upcoming mission."
+	},
+	{
+		"id": "reserve_dignity",
+		"name": "Dignity",
+		"type": "Resource",
+		"description": "At least you always have your dignity."
+	}
 ]
