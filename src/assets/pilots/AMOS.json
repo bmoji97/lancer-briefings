@@ -1,0 +1,372 @@
+{
+	"id": "f4da4f15-762a-4432-aa36-3ee69785e9aa",
+	"level": 0,
+	"callsign": "Amos",
+	"name": "Adrian Forsgren",
+	"player_name": "",
+	"status": "ACTIVE",
+	"dead": false,
+	"text_appearance": "<p>Neat Green Hair,</p><p>Amber Eye</p><p>Picky Fussy Nervous,</p><p>Friendship,</p><p>Most Valued Possession is a letter</p><p>Person values most is a Personal Hero</p>",
+	"notes": "<p>poor, both parents alive, standing BAD, Family lost in the war, goal to save the family, 6 siblings, 3 each gender, 2 older bro 1 younger, 2 older sis 1 younger,Like, dislike,hate, hero worship, neutral,hate, 5 friends, male - Big bro, male - co-worker, male - school pal, male - big bro, male - grew up with, Recovering from romantic past tragedy, they were killed in an accident, </p><p><br></p><p>Aniq Ortega is the Male school friend from the past \"bakugo\" they call him?</p>",
+	"history": "<p><br></p>",
+	"quirks": [],
+	"current_hp": 9,
+	"background": "Mechanic",
+	"resistances": [],
+	"portrait": "",
+	"cloud_portrait": "https://ds69h3g1zxwgy.cloudfront.net/ccce73b1-ac45-4017-9e47-eaf6e9639f9f/images/REALAmos.png",
+	"group": "",
+	"sort_index": -1,
+	"cc_ver": "",
+	"isDeleted": false,
+	"expireTime": "",
+	"deleteTime": "",
+	"lastModified": "Mon May 18 2026 20:43:46 GMT-0600 (Mountain Daylight Time)",
+	"lastUpdate_cloud": "Mon May 18 2026 20:43:46 GMT-0600 (Mountain Daylight Time)",
+	"lastSync": "Mon May 18 2026 20:43:46 GMT-0600 (Mountain Daylight Time)",
+	"skills": [
+		{ "id": "sk_blow_something_up", "rank": 1 },
+		{ "id": "sk_hack_or_fix", "rank": 1 },
+		{ "id": "sk_invent_or_create", "rank": 1 },
+		{ "id": "sk_stay_cool", "rank": 1 }
+	],
+	"talents": [
+		{ "id": "t_grease_monkey", "rank": 1 },
+		{ "id": "t_nuclear_cavalier", "rank": 1 },
+		{ "id": "t_demolitionist", "rank": 1 }
+	],
+	"mechSkills": [0, 0, 0, 2],
+	"core_bonuses": [],
+	"licenses": [],
+	"reserves": [],
+	"orgs": [],
+	"counter_data": [],
+	"custom_counters": [],
+	"special_equipment": {
+		"PilotGear": [],
+		"Frames": [],
+		"MechWeapons": [],
+		"WeaponMods": [],
+		"MechSystems": []
+	},
+	"bondId": "",
+	"xp": 0,
+	"stress": 0,
+	"isBroken": false,
+	"burdens": [],
+	"bondPowers": [],
+	"powerSelections": 0,
+	"maxStress": 8,
+	"bondAnswers": ["", ""],
+	"minorIdeal": "",
+	"clocks": [],
+	"combat_history": {
+		"moves": 0,
+		"kills": 0,
+		"damage": 0,
+		"hp_damage": 0,
+		"structure_damage": 0,
+		"overshield": 0,
+		"heat_damage": 0,
+		"reactor_damage": 0,
+		"overcharge_uses": 0,
+		"core_uses": 0
+	},
+	"state": {
+		"active_mech_id": "0ec3fb8f-83d2-439b-a38c-986a28905b71",
+		"remote_mech_id": "",
+		"stage": "Narrative",
+		"turn": 1,
+		"mission": 0,
+		"actions": 2,
+		"braced": false,
+		"overcharged": false,
+		"prepare": false,
+		"bracedCooldown": false,
+		"redundant": false,
+		"stats": {
+			"moves": 0,
+			"kills": 0,
+			"damage": 0,
+			"hp_damage": 0,
+			"structure_damage": 0,
+			"overshield": 0,
+			"heat_damage": 0,
+			"reactor_damage": 0,
+			"overcharge_uses": 0,
+			"core_uses": 0
+		},
+		"deployed": []
+	},
+	"loadout": {
+		"name": "Default Loadout",
+		"armor": [
+			{
+				"id": "pg_light_hardsuit",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			}
+		],
+		"weapons": [
+			{
+				"id": "pg_light_signature",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			},
+			{
+				"id": "pg_medium_signature",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			}
+		],
+		"gear": [
+			{
+				"id": "pg_mag_clamps",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			},
+			{
+				"id": "pg_extra_rations",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			},
+			{
+				"id": "pg_dataplating",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			}
+		],
+		"extendedWeapons": [],
+		"extendedGear": []
+	},
+	"mechs": [
+		{
+			"id": "0ec3fb8f-83d2-439b-a38c-986a28905b71",
+			"name": "Agreeable Work",
+			"notes": "",
+			"gm_note": "",
+			"frame": "mf_standard_pattern_i_everest",
+			"active": false,
+			"current_structure": 0,
+			"current_move": 0,
+			"boost": 0,
+			"current_hp": 0,
+			"overshield": 0,
+			"current_stress": 0,
+			"current_heat": 0,
+			"current_repairs": 0,
+			"current_overcharge": 0,
+			"current_core_energy": 1,
+			"statuses": [],
+			"conditions": [],
+			"resistances": [],
+			"reactions": [],
+			"burn": 0,
+			"destroyed": false,
+			"defeat": "",
+			"activations": 1,
+			"meltdown_imminent": false,
+			"reactor_destroyed": false,
+			"core_active": false,
+			"portrait": "",
+			"cloud_portrait": "https://ds69h3g1zxwgy.cloudfront.net/ccce73b1-ac45-4017-9e47-eaf6e9639f9f/images/agreeable.png",
+			"cc_ver": "ERR",
+			"lastModified": "Tue Jun 09 2026 18:30:48 GMT-0600 (Mountain Daylight Time)",
+			"isDeleted": false,
+			"expireTime": "",
+			"deleteTime": "",
+			"counter_data": [],
+			"custom_counters": [],
+			"loadouts": [
+				{
+					"id": "582d2987-543a-41b4-9704-3df0df227f57",
+					"name": "Primary",
+					"systems": [
+						{
+							"id": "ms_pattern_a_jericho_deployable_cover",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_pattern_b_hex_charges",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_pattern_a_smoke_charges",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						}
+					],
+					"integratedSystems": [],
+					"mounts": [
+						{
+							"mount_type": "Main",
+							"lock": false,
+							"slots": [
+								{
+									"size": "Main",
+									"weapon": {
+										"id": "mw_assault_rifle",
+										"note": "",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"extra": [],
+							"bonus_effects": [],
+							"modifiable": true
+						},
+						{
+							"mount_type": "Flex",
+							"lock": false,
+							"slots": [
+								{
+									"size": "Flex",
+									"weapon": {
+										"id": "mw_pistol",
+										"note": "",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"extra": [
+								{
+									"size": "Auxiliary",
+									"weapon": {
+										"id": "mw_tactical_knife",
+										"note": "This one should be the big ass crescent wrench",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"bonus_effects": [],
+							"modifiable": true
+						},
+						{
+							"mount_type": "Heavy",
+							"lock": false,
+							"slots": [
+								{
+									"size": "Heavy",
+									"weapon": {
+										"id": "mw_heavy_machine_gun",
+										"note": "",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"extra": [],
+							"bonus_effects": [],
+							"modifiable": true
+						}
+					],
+					"integratedMounts": [],
+					"improved_armament": {
+						"mount_type": "Flex",
+						"lock": false,
+						"slots": [{ "size": "Flex", "weapon": null }],
+						"extra": [{ "size": "Auxiliary", "weapon": null }],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"superheavy_mounting": {
+						"mount_type": "Superheavy",
+						"lock": false,
+						"slots": [{ "size": "Superheavy", "weapon": null }],
+						"extra": [],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"integratedWeapon": {
+						"mount_type": "Aux",
+						"lock": false,
+						"slots": [{ "size": "Auxiliary", "weapon": null }],
+						"extra": [],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"extraMounts": [],
+					"extraIntegratedMounts": []
+				}
+			],
+			"active_loadout_index": 0
+		}
+	],
+	"brews": []
+}

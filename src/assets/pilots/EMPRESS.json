@@ -1,0 +1,372 @@
+{
+	"id": "92082d5d-2711-4226-b684-054e4e63b0ad",
+	"level": 0,
+	"callsign": "Empress",
+	"name": "Calliope Lockheart",
+	"player_name": "",
+	"status": "ACTIVE",
+	"dead": false,
+	"text_appearance": "<p>female orange long curly hair silver eyes</p>",
+	"notes": "<p>arrogant proud and aloof</p><p>love</p><p>a letter</p><p>value no one</p>",
+	"history": "<p>High Noble</p><p>Parents alive and well</p><p>In good standing</p><p>only child</p><p>2 friends both female 1 kid sister 1 ex lover</p><p>single horny</p><p><br></p><p><br></p><p><br></p>",
+	"quirks": [],
+	"current_hp": 6,
+	"background": "Noble",
+	"resistances": [],
+	"portrait": "",
+	"cloud_portrait": "https://ds69h3g1zxwgy.cloudfront.net/7b99ac95-d72d-436a-ab4c-35c535797624/images/01003680264f1ef78c7dc1.png",
+	"group": "",
+	"sort_index": 5,
+	"cc_ver": "",
+	"isDeleted": false,
+	"expireTime": "",
+	"deleteTime": "",
+	"lastModified": "Mon May 18 2026 16:42:02 GMT-0700 (Pacific Daylight Time)",
+	"lastUpdate_cloud": "Mon May 18 2026 16:42:02 GMT-0700 (Pacific Daylight Time)",
+	"lastSync": "Mon May 18 2026 16:42:02 GMT-0700 (Pacific Daylight Time)",
+	"skills": [
+		{ "id": "sk_charm", "rank": 1 },
+		{ "id": "sk_read_a_situation", "rank": 1 },
+		{ "id": "sk_show_off", "rank": 1 },
+		{ "id": "sk_take_control", "rank": 1 }
+	],
+	"talents": [
+		{ "id": "t_nuclear_cavalier", "rank": 1 },
+		{ "id": "t_hunter", "rank": 1 },
+		{ "id": "t_bonded", "rank": 1 }
+	],
+	"mechSkills": [0, 2, 0, 0],
+	"core_bonuses": [],
+	"licenses": [],
+	"reserves": [],
+	"orgs": [],
+	"counter_data": [],
+	"custom_counters": [],
+	"special_equipment": {
+		"PilotGear": [],
+		"Frames": [],
+		"MechWeapons": [],
+		"WeaponMods": [],
+		"MechSystems": []
+	},
+	"bondId": "",
+	"xp": 0,
+	"stress": 0,
+	"isBroken": false,
+	"burdens": [],
+	"bondPowers": [],
+	"powerSelections": 0,
+	"maxStress": 8,
+	"bondAnswers": ["", ""],
+	"minorIdeal": "",
+	"clocks": [],
+	"combat_history": {
+		"moves": 0,
+		"kills": 0,
+		"damage": 0,
+		"hp_damage": 0,
+		"structure_damage": 0,
+		"overshield": 0,
+		"heat_damage": 0,
+		"reactor_damage": 0,
+		"overcharge_uses": 0,
+		"core_uses": 0
+	},
+	"state": {
+		"active_mech_id": "a00c909b-735a-4a7f-94dc-4e4d6f1439f3",
+		"remote_mech_id": "",
+		"stage": "Narrative",
+		"turn": 1,
+		"mission": 0,
+		"actions": 2,
+		"braced": false,
+		"overcharged": false,
+		"prepare": false,
+		"bracedCooldown": false,
+		"redundant": false,
+		"stats": {
+			"moves": 0,
+			"kills": 0,
+			"damage": 0,
+			"hp_damage": 0,
+			"structure_damage": 0,
+			"overshield": 0,
+			"heat_damage": 0,
+			"reactor_damage": 0,
+			"overcharge_uses": 0,
+			"core_uses": 0
+		},
+		"deployed": []
+	},
+	"loadout": {
+		"name": "Default Loadout",
+		"armor": [
+			{
+				"id": "pg_mobility_hardsuit",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			}
+		],
+		"weapons": [
+			{
+				"id": "pg_medium_a_c",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			},
+			{
+				"id": "pg_light_signature",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			}
+		],
+		"gear": [
+			{
+				"id": "pg_flexsuit",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			},
+			{
+				"id": "pg_mag_clamps",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			},
+			{
+				"id": "pg_camo_cloth",
+				"note": "",
+				"flavorName": "",
+				"flavorDescription": "",
+				"customDamageType": null,
+				"destroyed": false,
+				"uses": 0,
+				"cascading": false
+			}
+		],
+		"extendedWeapons": [],
+		"extendedGear": []
+	},
+	"mechs": [
+		{
+			"id": "a00c909b-735a-4a7f-94dc-4e4d6f1439f3",
+			"name": "Royal",
+			"notes": "",
+			"gm_note": "",
+			"frame": "mf_standard_pattern_i_everest",
+			"active": false,
+			"current_structure": 0,
+			"current_move": 0,
+			"boost": 0,
+			"current_hp": 0,
+			"overshield": 0,
+			"current_stress": 0,
+			"current_heat": 0,
+			"current_repairs": 0,
+			"current_overcharge": 0,
+			"current_core_energy": 1,
+			"statuses": [],
+			"conditions": [],
+			"resistances": [],
+			"reactions": [],
+			"burn": 0,
+			"destroyed": false,
+			"defeat": "",
+			"activations": 1,
+			"meltdown_imminent": false,
+			"reactor_destroyed": false,
+			"core_active": false,
+			"portrait": "",
+			"cloud_portrait": "https://ds69h3g1zxwgy.cloudfront.net/7b99ac95-d72d-436a-ab4c-35c535797624/images/royal.png",
+			"cc_ver": "ERR",
+			"lastModified": "Tue Jun 09 2026 12:51:24 GMT-0700 (Pacific Daylight Time)",
+			"isDeleted": false,
+			"expireTime": "",
+			"deleteTime": "",
+			"counter_data": [],
+			"custom_counters": [],
+			"loadouts": [
+				{
+					"id": "57907358-3a3a-46b9-90a5-5a0301c75102",
+					"name": "Primary",
+					"systems": [
+						{
+							"id": "ms_type_i_flight_system",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_eva_module",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_rapid_burst_jump_jet_system",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						}
+					],
+					"integratedSystems": [],
+					"mounts": [
+						{
+							"mount_type": "Main",
+							"lock": false,
+							"slots": [
+								{
+									"size": "Main",
+									"weapon": {
+										"id": "mw_assault_rifle",
+										"note": "",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"extra": [],
+							"bonus_effects": [],
+							"modifiable": true
+						},
+						{
+							"mount_type": "Flex",
+							"lock": false,
+							"slots": [
+								{
+									"size": "Flex",
+									"weapon": {
+										"id": "mw_tactical_knife",
+										"note": "",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"extra": [
+								{
+									"size": "Auxiliary",
+									"weapon": {
+										"id": "mw_tactical_knife",
+										"note": "",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"bonus_effects": [],
+							"modifiable": true
+						},
+						{
+							"mount_type": "Heavy",
+							"lock": false,
+							"slots": [
+								{
+									"size": "Heavy",
+									"weapon": {
+										"id": "mw_heavy_charged_blade",
+										"note": "",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"extra": [],
+							"bonus_effects": [],
+							"modifiable": true
+						}
+					],
+					"integratedMounts": [],
+					"improved_armament": {
+						"mount_type": "Flex",
+						"lock": false,
+						"slots": [{ "size": "Flex", "weapon": null }],
+						"extra": [{ "size": "Auxiliary", "weapon": null }],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"superheavy_mounting": {
+						"mount_type": "Superheavy",
+						"lock": false,
+						"slots": [{ "size": "Superheavy", "weapon": null }],
+						"extra": [],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"integratedWeapon": {
+						"mount_type": "Aux",
+						"lock": false,
+						"slots": [{ "size": "Auxiliary", "weapon": null }],
+						"extra": [],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"extraMounts": [],
+					"extraIntegratedMounts": []
+				}
+			],
+			"active_loadout_index": 0
+		}
+	],
+	"brews": []
+}

@@ -1,0 +1,364 @@
+{
+	"id": "1bbc48fd-5dea-4083-85e5-d73d4e014f59",
+	"level": 0,
+	"callsign": "Nubby Nubbs",
+	"name": "Wallington Theodore III",
+	"player_name": "",
+	"status": "ACTIVE",
+	"dead": false,
+	"text_appearance": "",
+	"notes": "",
+	"history": "",
+	"quirks": [],
+	"current_hp": 6,
+	"background": "Penal Colonist",
+	"resistances": [],
+	"portrait": "",
+	"cloud_portrait": "https://ds69h3g1zxwgy.cloudfront.net/6c0bc9d6-9eaf-4a68-92e8-107f1aeda26d/images/agpnubby.webp",
+	"group": "",
+	"sort_index": 20,
+	"cc_ver": "",
+	"isDeleted": false,
+	"expireTime": "",
+	"deleteTime": "",
+	"lastModified": "Thu Jun 11 2026 11:49:07 GMT-0700 (Pacific Daylight Time)",
+	"lastUpdate_cloud": "Thu Jun 11 2026 11:49:07 GMT-0700 (Pacific Daylight Time)",
+	"lastSync": "Thu Jun 11 2026 11:49:07 GMT-0700 (Pacific Daylight Time)",
+	"skills": [
+		{ "id": "sk_get_a_hold_of_something", "rank": 1 },
+		{ "id": "sk_hack_or_fix", "rank": 1 },
+		{ "id": "sk_survive", "rank": 1 },
+		{ "id": "sk_word_on_the_street", "rank": 1 }
+	],
+	"talents": [
+		{ "id": "t_vanguard", "rank": 1 },
+		{ "id": "t_walking_armory", "rank": 1 },
+		{ "id": "t_juggernaut", "rank": 1 }
+	],
+	"mechSkills": [2, 0, 0, 0],
+	"core_bonuses": [],
+	"licenses": [],
+	"reserves": [],
+	"orgs": [],
+	"counter_data": [],
+	"custom_counters": [],
+	"special_equipment": {
+		"PilotGear": [],
+		"Frames": [],
+		"MechWeapons": [],
+		"WeaponMods": [],
+		"MechSystems": []
+	},
+	"bondId": "",
+	"xp": 0,
+	"stress": 0,
+	"isBroken": false,
+	"burdens": [],
+	"bondPowers": [],
+	"powerSelections": 0,
+	"maxStress": 8,
+	"bondAnswers": ["", ""],
+	"minorIdeal": "",
+	"clocks": [],
+	"combat_history": {
+		"moves": 0,
+		"kills": 0,
+		"damage": 0,
+		"hp_damage": 0,
+		"structure_damage": 0,
+		"overshield": 0,
+		"heat_damage": 0,
+		"reactor_damage": 0,
+		"overcharge_uses": 0,
+		"core_uses": 0
+	},
+	"state": {
+		"active_mech_id": "b1c0c943-be09-4630-8f9c-f69f099c14f9",
+		"remote_mech_id": "",
+		"stage": "Narrative",
+		"turn": 1,
+		"mission": 0,
+		"actions": 2,
+		"braced": false,
+		"overcharged": false,
+		"prepare": false,
+		"bracedCooldown": false,
+		"redundant": false,
+		"stats": {
+			"moves": 0,
+			"kills": 0,
+			"damage": 0,
+			"hp_damage": 0,
+			"structure_damage": 0,
+			"overshield": 0,
+			"heat_damage": 0,
+			"reactor_damage": 0,
+			"overcharge_uses": 0,
+			"core_uses": 0
+		},
+		"deployed": []
+	},
+	"loadout": {
+		"name": "Default Loadout",
+		"armor": [],
+		"weapons": [],
+		"gear": [],
+		"extendedWeapons": [],
+		"extendedGear": []
+	},
+	"mechs": [
+		{
+			"id": "b1c0c943-be09-4630-8f9c-f69f099c14f9",
+			"name": "The Unconquerable Nubs",
+			"notes": "",
+			"gm_note": "",
+			"frame": "mf_standard_pattern_i_everest",
+			"active": false,
+			"current_structure": 0,
+			"current_move": 0,
+			"boost": 0,
+			"current_hp": 0,
+			"overshield": 0,
+			"current_stress": 0,
+			"current_heat": 0,
+			"current_repairs": 0,
+			"current_overcharge": 0,
+			"current_core_energy": 1,
+			"statuses": [],
+			"conditions": [],
+			"resistances": [],
+			"reactions": [],
+			"burn": 0,
+			"destroyed": false,
+			"defeat": "",
+			"activations": 1,
+			"meltdown_imminent": false,
+			"reactor_destroyed": false,
+			"core_active": false,
+			"portrait": "",
+			"cloud_portrait": "",
+			"cc_ver": "ERR",
+			"lastModified": "Thu Jun 11 2026 11:49:12 GMT-0700 (Pacific Daylight Time)",
+			"isDeleted": false,
+			"expireTime": "",
+			"deleteTime": "",
+			"counter_data": [],
+			"custom_counters": [],
+			"loadouts": [
+				{
+					"id": "5a659452-5265-400e-bc04-e79a02643bc7",
+					"name": "Primary",
+					"systems": [
+						{
+							"id": "ms_stable_structure",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_pattern_a_jericho_deployable_cover",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_personalizations",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						},
+						{
+							"id": "ms_manipulators",
+							"flavorName": "",
+							"flavorDescription": "",
+							"destroyed": false,
+							"uses": 0,
+							"cascading": false
+						}
+					],
+					"integratedSystems": [
+						{
+							"id": "ms_walking_armory_1",
+							"data": {
+								"id": "ms_walking_armory_1",
+								"name": "Ammo Case I",
+								"talent_item": true,
+								"talent_id": "t_walking_armory",
+								"talent_rank": 1,
+								"sp": 0,
+								"tags": [
+									{ "id": "tg_limited", "val": 6 },
+									{ "id": "tg_turn", "val": 1 }
+								],
+								"license": "GMS",
+								"license_level": 0,
+								"effect": "1/turn, when you attack with a Main ranged weapon, you may expend charges to apply one of the following effects to your attack at the listed cost.",
+								"ammo": [
+									{
+										"name": "Thumper",
+										"detail": "The attack gains Knockback 1 and deals Explosive damage.",
+										"allowed_sizes": ["Main"],
+										"allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+									},
+									{
+										"name": "Shock",
+										"detail": "The attack deals Energy damage. Choose one character targeted by your attack; adjacent characters take 1 Energy AP, whether the result is a hit or miss.",
+										"allowed_sizes": ["Main"],
+										"allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+									},
+									{
+										"name": "Mag",
+										"detail": "The attack gains Arcing and deals Kinetic damage.",
+										"allowed_sizes": ["Main"],
+										"allowed_types": ["cqb", "rifle", "launcher", "cannon", "nexus"]
+									}
+								],
+								"description": "Gained from the <i>Walking Armory: Rank I</i> pilot talent."
+							},
+							"note": "",
+							"flavorName": "",
+							"flavorDescription": "",
+							"maxUses": 6,
+							"currentUses": 0,
+							"destroyed": false,
+							"isUsed": false
+						}
+					],
+					"mounts": [
+						{
+							"mount_type": "Main",
+							"lock": false,
+							"slots": [
+								{
+									"size": "Main",
+									"weapon": {
+										"id": "mw_shotgun",
+										"note": "",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"extra": [],
+							"bonus_effects": [],
+							"modifiable": true
+						},
+						{
+							"mount_type": "Flex",
+							"lock": false,
+							"slots": [
+								{
+									"size": "Flex",
+									"weapon": {
+										"id": "mw_tactical_knife",
+										"note": "",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"extra": [
+								{
+									"size": "Auxiliary",
+									"weapon": {
+										"id": "mw_pistol",
+										"note": "",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"bonus_effects": [],
+							"modifiable": true
+						},
+						{
+							"mount_type": "Heavy",
+							"lock": false,
+							"slots": [
+								{
+									"size": "Heavy",
+									"weapon": {
+										"id": "mw_howitzer",
+										"note": "",
+										"mod": null,
+										"flavorName": "",
+										"flavorDescription": "",
+										"selectedProfile": 0,
+										"customDamageType": null,
+										"maxUseOverride": 0,
+										"destroyed": false,
+										"uses": 0,
+										"cascading": false,
+										"loaded": true
+									}
+								}
+							],
+							"extra": [],
+							"bonus_effects": [],
+							"modifiable": true
+						}
+					],
+					"integratedMounts": [],
+					"improved_armament": {
+						"mount_type": "Flex",
+						"lock": false,
+						"slots": [{ "size": "Flex", "weapon": null }],
+						"extra": [{ "size": "Auxiliary", "weapon": null }],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"superheavy_mounting": {
+						"mount_type": "Superheavy",
+						"lock": false,
+						"slots": [{ "size": "Superheavy", "weapon": null }],
+						"extra": [],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"integratedWeapon": {
+						"mount_type": "Aux",
+						"lock": false,
+						"slots": [{ "size": "Auxiliary", "weapon": null }],
+						"extra": [],
+						"bonus_effects": [],
+						"modifiable": true
+					},
+					"extraMounts": [],
+					"extraIntegratedMounts": []
+				}
+			],
+			"active_loadout_index": 0
+		}
+	],
+	"brews": []
+}
