@@ -24,7 +24,7 @@
 	--mission-start: rgba(109, 109, 109, 1);
 	--mission-partial: rgba(88, 34, 102, 1);
 	--mission-success: #226636;
-	--mission-failure: rgb(176, 93, 45);
+	--mission-failure: rgba(176, 45, 45, 1);
 	--primary-logo: #991e2a;
 	--secondary-logo: #9e541f;
 	/* Pilot Roster Text */
