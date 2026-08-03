@@ -22,6 +22,14 @@
 					<img src="/icons/events.svg" />
 					<span>Logs</span>
 				</router-link>
+				<router-link class="clipped-bottom-right" to="/contacts">
+					<img src="/icons/license.svg" />
+					<span>Contacts</span>
+				</router-link>
+				<router-link class="clipped-bottom-right" to="/factions">
+					<img src="/icons/npc.svg" />
+					<span>Factions</span>
+				</router-link>
 			</o-sidebar>
 		</section>
 	</div>
