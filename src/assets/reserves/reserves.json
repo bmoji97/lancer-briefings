@@ -1,5 +1,19 @@
 [
 	{
+		"id": "reserve_oblivion",
+		"name": "Oblivion",
+		"type": "Organization",
+		"description": "7R1N17Y's message board and intel gathering operation",
+		"callsign": "7R1N17Y"
+	},
+	{
+		"id": "reserver_stims",
+		"name": "Stims",
+		"type": "Tactical",
+		"description": "Two extra doses of the Stim Pilot Gear",
+		"callsign": "NUBBY NUBBS"
+	},
+	{
 		"id": "reserve_time",
 		"name": "Time",
 		"type": "Resource",

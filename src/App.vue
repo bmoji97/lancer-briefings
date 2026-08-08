@@ -12,6 +12,8 @@
 			:pilots="pilots"
 			:clocks="clocks"
 			:reserves="reserves"
+			:contacts="contacts"
+			:factions="factions"
 		/>
 	</div>
 	<svg
@@ -63,6 +65,8 @@ export default {
 			pilots: [],
 			reserves: [],
 			bonds: [],
+			contacts: [],
+			factions: [],
 		};
 	},
 	created() {
@@ -76,6 +80,9 @@ export default {
 		this.importClocks(import.meta.glob("@/assets/clocks/*.json"));
 		this.importReserves(import.meta.glob("@/assets/reserves/*.json"));
 		this.importPilots(import.meta.glob("@/assets/pilots/*.json"));
+		this.importFactions(
+			import.meta.glob("@/assets/factions/*.md", { query: "?raw", import: "default" })
+		);
 	},
 	mounted() {
 		this.$router.push("/status");
@@ -170,6 +177,20 @@ export default {
 					this.reserves = [...this.reserves, reserve];
 				});
 			});
+		},
+		async importFactions(files) {
+			let filePromises = Object.keys(files).map(path => files[path]());
+			let fileContents = await Promise.all(filePromises);
+			fileContents.forEach(content => {
+				let faction = {};
+				faction["title"] = content.split("\n")[0];
+				faction["location"] = content.split("\n")[1];
+				faction["disposition"] = content.split("\n")[2];
+				faction["thumbnail"] = content.split("\n")[3];
+				faction["content"] = content.split("\n").splice(4).join("\n");
+				this.factions = [...this.factions, faction];
+			});
+			this.factions = this.factions.reverse();
 		},
 	},
 };

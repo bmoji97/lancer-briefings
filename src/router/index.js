@@ -3,6 +3,8 @@ import { createMemoryHistory, createWebHistory, createRouter } from "vue-router"
 import Status from "@/views/StatusView.vue";
 import Pilots from "@/views/PilotsView.vue";
 import Events from "@/views/EventsView.vue";
+//import Contacts from "@/views/ContactsView.vue";
+import Factions from "@/views/FactionsView.vue";
 import Config from "@/assets/info/general-config.json";
 
 const DEFAULT_TITLE = Config.defaultTitle;
@@ -31,6 +33,20 @@ const routes = [
 		component: Events,
 		props: true,
 		meta: { title: `${DEFAULT_TITLE} EVENTS LOG` },
+	},
+	/*{
+		path: "/contacts",
+		name: "Contacts",
+		component: Contacts,
+		props: true,
+		meta: { title: `${DEFAULT_TITLE} Contact List` },
+	},*/
+	{
+		path: "/factions",
+		name: "Factions",
+		component: Factions,
+		props: true,
+		meta: { title: `${DEFAULT_TITLE} Faction Dossiers` },
 	},
 ];
 
