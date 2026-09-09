@@ -1,0 +1,65 @@
+{
+	"collectionItemType": "character",
+	"id": "1e120d2f-ae50-4e26-baca-d0fb20e92b5f",
+	"name": "Aniq Ortega",
+	"description": "",
+	"note": "Industrial Worker",
+	"alias": "Nitro",
+	"title": "Undeniable Talent",
+	"pronouns": "He/Him",
+	"save": {
+		"lastModified": 1785869789279,
+		"deleteTime": 0,
+		"created": 1778617279275,
+		"remote_code": "",
+		"remote_author": "",
+		"remote_collection": ""
+	},
+	"cloud": {
+		"_ts": { "title": 1785867750517, "narrative.textItems": 1785873713047 },
+		"_lastHash": "841:3854509130",
+		"_lastHashes": {
+			"collectionItemType": "1f8hyf0",
+			"id": "19gsgp6",
+			"name": "ok42mw",
+			"description": "3hkqt",
+			"note": "3hkqt",
+			"alias": "tovz0r",
+			"title": "18k0hec",
+			"pronouns": "1j8dfuz",
+			"img.portrait": "3hkqt",
+			"img.avatar": "3t0l",
+			"img.cloud_portrait": "4w3ejq",
+			"narrative.textItems": "15hkem6",
+			"narrative.labels": "3hntv",
+			"narrative.relationships": "3hntv",
+			"narrative.clocks": "3hntv",
+			"narrative.tables": "3hntv",
+			"folder.folder": "21l1jf",
+			"folder.sortIndex": "3t05"
+		},
+		"_lastUploadedItemModified": 1785869789279,
+		"_lastSyncedUpdated": 1785873715271
+	},
+	"img": {
+		"portrait": "",
+		"cloud_portrait": "https://ds69h3g1zxwgy.cloudfront.net/cd2539ad-7efc-4244-a234-eb2fe124956b/images/AniqOrtega.jpeg"
+	},
+	"narrative": {
+		"textItems": [
+			{
+				"header": "Appearance",
+				"body": "<p>Trimmed mohawk, light skin with farmer's tan, dark eyes, medium brown hair, bodybuilder musculature, just under 6 feet tall, multiple tattoos, military standard clothing</p>"
+			},
+			{
+				"header": "Personality",
+				"body": "<p>Angry, arrogant, fragile ego, likes to push buttons but knows when to stop, every other thing out of his mouth is sarcastic</p>"
+			}
+		],
+		"labels": [],
+		"relationships": [],
+		"clocks": [],
+		"tables": []
+	},
+	"folder": { "folder": "Gladiator Squadron", "sortIndex": 0 }
+}

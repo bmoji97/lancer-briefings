@@ -63,15 +63,27 @@
 	}
 }
 
+/* Travel is its own height plus the 96px header, parking the sidebar's bottom edge flush
+   with the top of the viewport. It slides *behind* the header (which outranks
+   it on z-index) and emerges from underneath.
+
+   Not just -100%: that would park it behind the header rather than above the viewport,
+   and the header is only 80% opaque — the sidebar's red would tint the header's left
+   corner by ~27/255 for the whole 1.2s delay.
+
+   Keep the offset near the viewport edge either way: a large one (this was -1000%, i.e.
+   9090px for a 909px sidebar) spends most of the animation off-screen and reads as a
+   snap no matter how long the duration is set — it was visible for ~270ms of its 1000ms.
+   `visibility` is deliberately absent: it is a discrete property and hid the first half of the slide.
+   The 0% transform hides it instead, including during the delay, since the rule using this fills `both`.
+   */
 @keyframes slideInDownSidebar {
 	0% {
-		transform: translateY(-1000%);
-		visibility: hidden;
+		transform: translateY(calc(-100% - 96px));
 	}
 
 	100% {
 		transform: translateY(0);
-		visibility: visible;
 	}
 }
 
@@ -123,13 +135,17 @@
    otherwise the animations will be disabled.
 */
 
-/* TODO: fix animations for Pilot.vue and Event.vue elements */
+/* DONE: fix animations for Pilot.vue and Event.vue elements */
 
 /* HEADER + SIDEBAR */
+/* z-index above #sidebar (100) so the sidebar slides out from behind the header rather
+   than over it. Both sit in the root stacking context — .page-wrapper, .sidebar-page
+   and .sidebar-layout create none — so without this they tie at 100 and the sidebar
+   wins on DOM order. */
 header[class*="animate"] {
 	position: relative;
-	z-index: 100;
-	animation: slideInFromLeft 0.3s ease-out;
+	z-index: 101;
+	animation: slideInFromLeft 0.8s ease-out;
 }
 
 .sidebar-page[class*="animate"] #sidebar {
@@ -137,36 +153,44 @@ header[class*="animate"] {
 	position: relative;
 	z-index: 100;
 	background-color: var(--primary-color);
-	animation: slideInDownSidebar 0.3s ease-out 1.2s;
+	animation: slideInDownSidebar 0.8s ease-out 1.2s;
 	animation-fill-mode: both;
 }
 
 [class*="animate"] .clipped-bottom-right {
-	animation: flickerIn 0.5s ease 1.5s;
+	animation: flickerIn 1s ease 2s;
+	animation-fill-mode: both;
 }
 
+/* These three keep `forwards` plus a base transform that parks them far off-screen,
+   rather than using `both` like the rules below. `both` would fill with the 0% keyframe
+   during the delay, and for these elements that is only translateX(-100%) (-500% for the rhombus)
+   which is not far enough to clear the viewport, because they sit near the left edge
+   and are narrow. Measured with `both`, the logo showed a 15px sliver and .title-container
+   an 81px sliver for the whole delay. The exaggerated base transform is what actually hides them.
+*/
 [class*="animate"] .title-container {
 	transform: translateX(-5000%);
-	animation: slideInFromLeft 0.3s ease-out 0.5s;
+	animation: slideInFromLeft 0.8s ease-out 1s;
 	animation-fill-mode: forwards;
 }
 
 [class*="animate"] .logo {
 	transform: translateX(-5000%);
-	animation: slideInFromLeft 0.3s ease-out 1s;
+	animation: slideInFromLeft 0.8s ease-out 1.5s;
 	animation-fill-mode: forwards;
 }
 
 [class*="animate"] .rhombus {
 	transform: translateX(-200%) skew(-0.785398rad);
-	animation: slideInFromLeftRhombus 0.3s ease-out 1s 1;
+	animation: slideInFromLeftRhombus 0.8s ease-out 1.5s 1;
 	animation-fill-mode: forwards;
 }
 
 header[class*="animate"] div video,
 header[class*="animate"] div.location-info {
-	animation: flickerIn 0.5s ease-in 1.5s 1;
-	animation-fill-mode: forwards;
+	animation: flickerIn 1s ease-in 2s 1;
+	animation-fill-mode: both;
 }
 /* END HEADER + SIDEBAR */
 
@@ -174,11 +198,14 @@ header[class*="animate"] div.location-info {
 
 .content-container[class*="animate"]#status,
 .section-content-container[class*="animate"]#pilots,
+.section-content-container[class*="animate"]#contacts,
 section.section-container[class*="animate"]#events,
-section.section-container[class*="animate"]#events-logs {
+section.section-container[class*="animate"]#events-logs,
+section.section-container[class*="animate"]#factions,
+section.section-container[class*="animate"]#dossiers {
 	position: relative;
 	z-index: 0;
-	animation: slideInFromTopFade 0.5s ease-in-out;
+	animation: slideInFromTopFade 1s ease-in-out;
 	animation-fill-mode: both;
 }
 

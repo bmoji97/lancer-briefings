@@ -1,49 +1,38 @@
 <template>
 	<div class="clock-container" @click="toggleActive">
-		<div
-		  v-if="$props.clock.type == 'Story'"
-		  :class="$props.clock.type.toLowerCase()">
+		<div v-if="$props.clock.type == 'Story'" :class="$props.clock.type.toLowerCase()">
 			<div class="clock-header">
 				<h2 class="clock-subtitle">Story // Relationship</h2>
 				<h1 class="clock-title">{{ $props.clock.name }}</h1>
 			</div>
 			<div class="clock-body">
 				<div class="clock">
-					<DoughnutChart
-					  :chartData="testData"
-					  :options="options"
-					  class="chart" />
+					<DoughnutChart :chartData="testData" :options="options" class="chart" />
 				</div>
 				<div class="clock-summary">
 					{{ clock.description }}
 				</div>
 			</div>
 		</div>
-		<div
-		  v-if="$props.clock.type != 'Story'"
-		  :class="$props.clock.type.toLowerCase()">
+		<div v-if="$props.clock.type != 'Story'" :class="$props.clock.type.toLowerCase()">
 			<div class="clock-body">
 				<div class="clock">
-					<DoughnutChart
-					  :chartData="testData"
-					  :options="options"
-					  class="chart" />
+					<DoughnutChart :chartData="testData" :options="options" class="chart" />
 				</div>
 				<div class="clock-header">
 					<h2 class="clock-subtitle">{{ $props.clock.type }}</h2>
 					<h1 class="clock-title">{{ $props.clock.name }}</h1>
 				</div>
 				<o-icon
-				  pack="mdi"
-				  class="icon transition"
-				  ref="arrow"
-				  icon="chevron-up"
-				  size="large"
-				  v-bind:style="{ transform: `rotate(${$props.deg}deg)` }" />
+					pack="mdi"
+					class="icon transition"
+					ref="arrow"
+					icon="chevron-up"
+					size="large"
+					v-bind:style="{ transform: `rotate(${deg}deg)` }"
+				/>
 			</div>
-			<div
-			  v-if="isActive"
-			  class="clock-summary">
+			<div v-if="isActive" class="clock-summary">
 				{{ clock.description }}
 			</div>
 		</div>
@@ -103,6 +92,13 @@ export default defineComponent({
 			cutout: "35%",
 			devicePixelRatio: 2,
 			animation,
+			// Chart.js snaps animations to their end state on every resize
+			// (transitions.resize.animation.duration defaults to 0). The canvas
+			// resizes while the panel lays out, which would otherwise discard the
+			// staggered reveal before it starts.
+			transitions: {
+				resize: { animation },
+			},
 		});
 
 		const testData = computed(() => ({
@@ -117,21 +113,17 @@ export default defineComponent({
 		const isActive = ref(false);
 
 		function toggleActive() {
-			if (this.deg > 0) {
-				this.deg = 0;
-			} else {
-				this.deg = 180;
-			}
+			deg.value = deg.value > 0 ? 0 : 180;
 			isActive.value = !isActive.value;
 		}
 
-		return { testData, options, isActive, toggleActive };
+		return { testData, options, isActive, toggleActive, deg };
 	},
 });
 </script>
 
 <style type="scss">
 .transition {
-	transition: transform 0.1s ease-in-out;
+	transition: transform 0.075s ease-in-out;
 }
 </style>

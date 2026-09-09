@@ -1,0 +1,103 @@
+{
+	"collectionItemType": "character",
+	"id": "42753245-aa56-421b-9d93-eb4966b60143",
+	"name": "Anatoly St. John",
+	"description": "",
+	"note": "Petty Thief",
+	"alias": "Weasel",
+	"title": "Escape Artist",
+	"pronouns": "He/Him",
+	"save": {
+		"lastModified": 1786559251719,
+		"deleteTime": 0,
+		"created": 1778615145033,
+		"remote_code": "",
+		"remote_author": "",
+		"remote_collection": ""
+	},
+	"cloud": {
+		"_ts": {
+			"title": 1785867750518,
+			"narrative.relationships": 1785867750518,
+			"narrative.textItems": 1785873713047,
+			"collectionItemType": 1778617806793,
+			"id": 1778617806793,
+			"name": 1778617806793,
+			"description": 1778617806793,
+			"note": 1778617806793,
+			"alias": 1780094397713,
+			"pronouns": 1778617806793,
+			"save": 1778617806793,
+			"cloud": 1778617806793,
+			"img": 1778617806793,
+			"narrative": 1778617806793,
+			"folder": 1778617806793,
+			"img.cloud_portrait": 1781479740319
+		},
+		"_lastHash": "961:1585992554",
+		"_lastHashes": {
+			"collectionItemType": "1f8hyf0",
+			"id": "1mqqmew",
+			"name": "104em6n",
+			"description": "3hkqt",
+			"note": "3hkqt",
+			"alias": "14guyuk",
+			"title": "kpa08d",
+			"pronouns": "1j8dfuz",
+			"img.portrait": "3hkqt",
+			"img.avatar": "3t0l",
+			"img.cloud_portrait": "xreiqk",
+			"narrative.textItems": "1bry49h",
+			"narrative.labels": "3hntv",
+			"narrative.relationships.e13f12d7-5d9d-4e10-a953-10f15fdaff6c.id": "14ow0ub",
+			"narrative.relationships.e13f12d7-5d9d-4e10-a953-10f15fdaff6c.name": "otfetb",
+			"narrative.relationships.e13f12d7-5d9d-4e10-a953-10f15fdaff6c.relationship": "1qmpwyy",
+			"narrative.relationships.e13f12d7-5d9d-4e10-a953-10f15fdaff6c.notes": "3hkqt",
+			"narrative.relationships.f6a56de4-b427-4e3a-92ea-ccfc0d47282a.id": "61cjg6",
+			"narrative.relationships.f6a56de4-b427-4e3a-92ea-ccfc0d47282a.name": "p6r7os",
+			"narrative.relationships.f6a56de4-b427-4e3a-92ea-ccfc0d47282a.relationship": "1qmpwyy",
+			"narrative.relationships.f6a56de4-b427-4e3a-92ea-ccfc0d47282a.notes": "3hkqt",
+			"narrative.relationships.__ids": "e13f12d7-5d9d-4e10-a953-10f15fdaff6c,f6a56de4-b427-4e3a-92ea-ccfc0d47282a",
+			"narrative.clocks": "3hntv",
+			"narrative.tables": "3hntv",
+			"folder.folder": "21l1jf",
+			"folder.sortIndex": "3t05"
+		},
+		"_lastUploadedItemModified": 1786559251719,
+		"_lastSyncedUpdated": 1786559252632
+	},
+	"img": {
+		"portrait": "",
+		"cloud_portrait": "https://ds69h3g1zxwgy.cloudfront.net/cd2539ad-7efc-4244-a234-eb2fe124956b/images/AnatolySt.jpeg"
+	},
+	"narrative": {
+		"textItems": [
+			{
+				"header": "Appearance",
+				"body": "<p>Greasy manbun, dark hair, patchy beard kept short, dark beady eyes, dark tanned skin, tall and wispy, baggy clothes with lots of pockets</p>"
+			},
+			{
+				"header": "Personality",
+				"body": "<p>Shifty-eyed, distrustful, self-possessed, cowardly</p>"
+			}
+		],
+		"labels": [],
+		"relationships": [
+			{
+				"id": "e13f12d7-5d9d-4e10-a953-10f15fdaff6c",
+				"name": "Shameer Mctavish",
+				"relationship": "Squadmate",
+				"notes": ""
+			},
+			{
+				"id": "f6a56de4-b427-4e3a-92ea-ccfc0d47282a",
+				"name": "Shao Hua Eisenhauer IV",
+				"relationship": "Squadmate",
+				"notes": ""
+			}
+		],
+		"clocks": [],
+		"tables": []
+	},
+	"folder": { "folder": "Gladiator Squadron", "sortIndex": 0 }
+}

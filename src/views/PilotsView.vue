@@ -33,9 +33,12 @@ export default {
 	data() {
 		return {
 			animateView: this.animate,
-			animationDelay: "0s",
+			animationDelay: "1.75s",
 			clockAnimationDelay: "2500",
 		};
+	},
+	created() {
+		this.setAnimate();
 	},
 	methods: {
 		setAnimate() {

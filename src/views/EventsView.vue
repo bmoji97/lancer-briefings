@@ -64,12 +64,29 @@ export default {
 	},
 	data() {
 		return {
+			animateView: this.animate,
+			animationDelay: "1.75s",
 			selectedEvent: {
 				type: Object,
 			},
 		};
 	},
+	created() {
+		this.setAnimate();
+	},
 	methods: {
+		setAnimate() {
+			if (this.animate) {
+				this.animateView = true;
+			}
+			let statusAnimated = window.sessionStorage.getItem("statusAnimated");
+			if (statusAnimated) {
+				this.animationDelay = "0s";
+			}
+			if (statusAnimated === null) {
+				window.sessionStorage.setItem("statusAnimated", true);
+			}
+		},
 		selectEvent(event) {
 			this.selectedEvent = event;
 		},

@@ -61,6 +61,12 @@ export default defineComponent({
 			cutout: "35%",
 			devicePixelRatio: 2,
 			animation,
+			// Same fix as Clock.vue: Chart.js snaps animations to their end state on every
+			// resize (transitions.resize.animation.duration defaults to 0), and the canvas
+			// resizes while the card lays out, which would discard the delay before it runs.
+			transitions: {
+				resize: { animation },
+			},
 		});
 
 		const testData = computed(() => ({

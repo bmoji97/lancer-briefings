@@ -1,0 +1,67 @@
+{
+	"collectionItemType": "character",
+	"id": "f6a56de4-b427-4e3a-92ea-ccfc0d47282a",
+	"name": "Shao Hua Eisenhauer IV",
+	"description": "<p>A former Smith-Shimano Corpro biologist, he signed up with the Union Navy after being let go for unknown reasons. Once under way, he found himself reunited with his old university lab partner Fernando 'Cornfed' <span style=\"background-color: oklab(0.219511 0.00211037 -0.00744569); color: oklab(0.952693 0.000792831 -0.00253612);\">Bobcaygeon</span>. Cornfed dislikes him for his cavalier and amoral approach to science; they maintain a working, if antagonistic, relationship.</p>",
+	"note": "Biologist",
+	"alias": "Ike",
+	"title": "Steel Orchid",
+	"pronouns": "He/Him",
+	"save": {
+		"lastModified": 1785868303296,
+		"deleteTime": 0,
+		"created": 1778615004333,
+		"remote_code": "",
+		"remote_author": "",
+		"remote_collection": ""
+	},
+	"cloud": {
+		"_ts": {
+			"title": 1785867750518,
+			"narrative.relationships": 1785867750518,
+			"narrative.tables.78db0702-f29b-44af-a01f-630d5c8cdd4b": 1785867873012,
+			"narrative.clocks.6452649d-1dde-466e-ae2d-a46140d77551": 1785867877023
+		},
+		"_lastHash": "710:654132239",
+		"_lastHashes": {
+			"collectionItemType": "1f8hyf0",
+			"id": "61cjg6",
+			"name": "p6r7os",
+			"description": "12v6454",
+			"note": "3hkqt",
+			"alias": "1legki",
+			"title": "14grs1h",
+			"pronouns": "1j8dfuz",
+			"img.portrait": "3hkqt",
+			"img.avatar": "3t0l",
+			"img.cloud_portrait": "7s4o4y",
+			"narrative.textItems": "1a7juia",
+			"narrative.labels": "3hntv",
+			"narrative.relationships": "3hntv",
+			"narrative.clocks": "3hntv",
+			"narrative.tables": "3hntv",
+			"folder.folder": "21l1jf",
+			"folder.sortIndex": "3t05"
+		},
+		"_lastUploadedItemModified": 1785867496758,
+		"_lastSyncedUpdated": 1785867752250
+	},
+	"img": {
+		"portrait": "",
+		"cloud_portrait": "https://ds69h3g1zxwgy.cloudfront.net/cd2539ad-7efc-4244-a234-eb2fe124956b/images/ShaoHuaEisenhauerIV.jpeg"
+	},
+	"narrative": {
+		"textItems": [
+			{
+				"header": "Appearance",
+				"body": "<p>Tall and lanky, handsome, clean-shaven, tousled ear-length black hair, constantly wears glasses, dark eyes</p>"
+			},
+			{ "header": "Personality", "body": "<p>Driven, opportunistic, haughty, self-assured</p>" }
+		],
+		"labels": [],
+		"relationships": [],
+		"clocks": [],
+		"tables": []
+	},
+	"folder": { "folder": "Gladiator Squadron", "sortIndex": 0 }
+}

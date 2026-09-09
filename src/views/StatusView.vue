@@ -16,7 +16,7 @@
 						v-for="item in missions"
 						:key="item.slug"
 						:mission="item"
-						:selected="missionSlug"
+						:selected="selectedMission?.slug ?? ''"
 						@click="selectMission(item.slug)"
 					/>
 				</div>
@@ -92,6 +92,8 @@ export default {
 			type: Boolean,
 			required: true,
 		},
+		// Declared only to keep it off the root element as a fallthrough attribute.
+		// No longer selects the opening mission — the newest one is used instead.
 		initialSlug: {
 			type: String,
 			required: true,
@@ -119,33 +121,29 @@ export default {
 	},
 	data() {
 		return {
-			missionSlug: this.initialSlug,
+			// null until the user picks one; falls back to the newest mission
+			missionSlug: null,
 			animateView: this.animate,
 			animationDelay: "1.75s",
 			clockAnimationDelay: "2500",
-			missionMarkdown: "",
 		};
 	},
-	computed: {},
+	computed: {
+		// missions are sorted newest-first, so missions[0] is the current briefing
+		selectedMission() {
+			return this.missions.find(x => x.slug === this.missionSlug) || this.missions[0] || null;
+		},
+		missionMarkdown() {
+			return this.selectedMission?.content ?? "";
+		},
+	},
 	created() {
 		this.setAnimate();
 		this.setClockAnimateDelay();
 	},
-	beforeUpdate() {
-		// initial set
-		this.selectMission(this.missionSlug);
-	},
-	mounted() {
-		// need to set on re-mount
-		if (this.missions.length > 0) {
-			this.selectMission(this.missions[0].slug);
-		}
-	},
 	methods: {
 		selectMission(slug) {
 			this.missionSlug = slug;
-			let m = this.missions.find(x => x.slug === this.missionSlug);
-			this.missionMarkdown = m.content;
 		},
 		setAnimate() {
 			if (this.animate) {

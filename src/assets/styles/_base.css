@@ -769,21 +769,47 @@ section .section-header h1 {
 	display: flex;
 }
 
-.item {
+/* Scoped to the progress bar: `.item` on its own is generic enough to collide with
+   anything, and ProgressBar.vue is its only consumer. */
+.segmented-progressbar .item {
 	width: 100%;
 	background-color: lightgray;
 	margin-right: 2px;
 	height: 22px;
 }
 
-.item:first-child {
+.segmented-progressbar .item:first-child {
 	border-top-left-radius: 11px;
 	border-bottom-left-radius: 11px;
 }
 
-.item:last-child {
+.segmented-progressbar .item:last-child {
 	border-top-right-radius: 11px;
 	border-bottom-right-radius: 11px;
+}
+
+/* The burden/track block on the IDENT card. The equivalent layout rules upstream are
+   scoped to .pilot-wrapper, a container this fork's card does not use. */
+.pilot-identity .pilot-tracks {
+	padding-top: 5px;
+	gap: 1em;
+}
+
+.pilot-identity .pilot-tracks .segmented-progressbar {
+	margin: 2px 0 6px 0;
+	max-width: 15em;
+}
+
+.pilot-identity .pilot-tracks .segmented-progressbar .item {
+	height: 8px;
+	background-color: var(--text-pilot-code);
+}
+
+.pilot-identity .burdens {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5em;
+	max-width: 15em;
 }
 
 .pilot-wrapper .bonds-column .bonds {
@@ -1164,11 +1190,12 @@ section .section-header h1 {
 	padding: 1em 1em 1em 1em;
 }
 
-/* for Pilot view typing animation */
-.is-typed span.cursor {
-	display: inline-block;
-	width: 3px;
-	background-color: var(--text-pilot-code);
+/* for Pilot view typing animation.
+   TypeIt renders its caret as .ti-cursor containing the cursorChar glyph, so this colours
+   text rather than painting a block: the previous rule targeted vue-writer's markup
+   (.is-typed span.cursor), which was an empty span drawn as a 3px bar. */
+.type-it .ti-cursor {
+	color: var(--text-pilot-code);
 }
 
 .event-modal {
@@ -1663,13 +1690,13 @@ div.markdown ol li {
 
 .biometrics,
 .mech-record {
-	transition: 0.2s ease-in-out;
+	transition: 0.15s ease-in-out;
 }
 
 .biometrics:hover,
 .mech-record:hover {
 	background-color: var(--highlight-hover) !important;
-	transition: 0.2s ease-in-out;
+	transition: 0.15s ease-in-out;
 }
 
 .pilot-identity .biometrics,

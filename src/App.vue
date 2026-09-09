@@ -80,6 +80,7 @@ export default {
 		this.importClocks(import.meta.glob("@/assets/clocks/*.json"));
 		this.importReserves(import.meta.glob("@/assets/reserves/*.json"));
 		this.importPilots(import.meta.glob("@/assets/pilots/*.json"));
+		this.importContacts(import.meta.glob("@/assets/contacts/*.json"));
 		this.importFactions(
 			import.meta.glob("@/assets/factions/*.md", { query: "?raw", import: "default" })
 		);
@@ -96,15 +97,24 @@ export default {
 			faviconEl.setAttribute("href", favicon);
 			headEl.appendChild(faviconEl);
 		},
+		// Content files are CRLF on Windows (git core.autocrlf converts on checkout, and
+		// editors save that way), while these parsers read fixed line indices. Splitting on
+		// "\n" alone leaves a trailing \r inside every field — mission.status became
+		// "start\r", which matched none of Mission.vue's status cases, so the label
+		// vanished and the icon URL gained a stray character.
+		splitLines(content) {
+			return content.replace(/\r\n?/g, "\n").split("\n");
+		},
 		async importMissions(files) {
 			let filePromises = Object.keys(files).map(path => files[path]());
 			let fileContents = await Promise.all(filePromises);
 			fileContents.forEach(content => {
+				let lines = this.splitLines(content);
 				let mission = {};
-				mission["slug"] = content.split("\n")[0];
-				mission["name"] = content.split("\n")[1];
-				mission["status"] = content.split("\n")[2];
-				mission["content"] = content.split("\n").splice(3).join("\n");
+				mission["slug"] = lines[0];
+				mission["name"] = lines[1];
+				mission["status"] = lines[2];
+				mission["content"] = lines.slice(3).join("\n");
 				this.missions = [...this.missions, mission];
 			});
 			this.missions = this.missions.sort(function (a, b) {
@@ -115,12 +125,13 @@ export default {
 			let filePromises = Object.keys(files).map(path => files[path]());
 			let fileContents = await Promise.all(filePromises);
 			fileContents.forEach(content => {
+				let lines = this.splitLines(content);
 				let event = {};
-				event["title"] = content.split("\n")[0];
-				event["location"] = content.split("\n")[1];
-				event["time"] = content.split("\n")[2];
-				event["thumbnail"] = content.split("\n")[3];
-				event["content"] = content.split("\n").splice(4).join("\n");
+				event["title"] = lines[0];
+				event["location"] = lines[1];
+				event["time"] = lines[2];
+				event["thumbnail"] = lines[3];
+				event["content"] = lines.slice(4).join("\n");
 				this.events = [...this.events, event];
 			});
 			this.events = this.events.reverse();
@@ -143,7 +154,21 @@ export default {
 			let filePromises = Object.keys(files).map(path => files[path]());
 			let fileContents = await Promise.all(filePromises);
 			fileContents.forEach(content => {
-				let pilotFromJson = JSON.parse(JSON.stringify(content));
+				// COMP/CON v3 wraps the pilot in an envelope: { EXPORT_TYPE: "Save Pilot", data }.
+				// Everything downstream expects the pilot record itself, so unwrap it here.
+				// (vite's namedExports puts `data` on the module as well as under `default`.)
+				let file = JSON.parse(JSON.stringify(content));
+				let pilotFromJson = file.data ?? file.default?.data;
+
+				// Old flat-schema exports have no envelope. Skip them loudly rather than
+				// throwing here, which would abort the whole loader and blank every view.
+				if (!pilotFromJson) {
+					console.warn(
+						`[pilots] Skipping "${file.callsign ?? file.default?.callsign ?? "unknown"}": ` +
+							`not a COMP/CON v3 export (expected { EXPORT_TYPE, data }). Re-export it from COMP/CON.`
+					);
+					return;
+				}
 				// In case the pilot was added from a copy on compcon via sharecode, remove the "reference mark" symbol
 				pilotFromJson.name = pilotFromJson.name.replace("※", "");
 				pilotFromJson.callsign = pilotFromJson.callsign.replace("※", "");
@@ -153,7 +178,8 @@ export default {
 					...pilotFromVue,
 				};
 				this.pilots = [...this.pilots, pilot];
-				pilot.clocks.forEach(content => {
+				// v3 moved the pilot's clocks under the bond block.
+				(pilot.bond?.clocks || []).forEach(content => {
 					let clock = {};
 					clock["type"] = `Pilot Project // ${pilot.callsign}`;
 					clock["result"] = "";
@@ -165,7 +191,7 @@ export default {
 					this.clocks = [...this.clocks, clock];
 				});
 
-				pilot.reserves.forEach(content => {
+				(pilot.reserves || []).forEach(content => {
 					let reserve = {};
 					reserve["type"] = content.type;
 					reserve["name"] = content.name;
@@ -178,16 +204,28 @@ export default {
 				});
 			});
 		},
+		async importContacts(files) {
+			let filePromises = Object.keys(files).map(path => files[path]());
+			let fileContents = await Promise.all(filePromises);
+			fileContents.forEach(content => {
+				let contact = JSON.parse(JSON.stringify(content)).default;
+				this.contacts = [...this.contacts, contact];
+			});
+			this.contacts = this.contacts.sort(function (a, b) {
+				return a.name.localeCompare(b.name);
+			});
+		},
 		async importFactions(files) {
 			let filePromises = Object.keys(files).map(path => files[path]());
 			let fileContents = await Promise.all(filePromises);
 			fileContents.forEach(content => {
+				let lines = this.splitLines(content);
 				let faction = {};
-				faction["title"] = content.split("\n")[0];
-				faction["location"] = content.split("\n")[1];
-				faction["disposition"] = content.split("\n")[2];
-				faction["thumbnail"] = content.split("\n")[3];
-				faction["content"] = content.split("\n").splice(4).join("\n");
+				faction["title"] = lines[0];
+				faction["location"] = lines[1];
+				faction["disposition"] = lines[2];
+				faction["thumbnail"] = lines[3];
+				faction["content"] = lines.slice(4).join("\n");
 				this.factions = [...this.factions, faction];
 			});
 			this.factions = this.factions.reverse();

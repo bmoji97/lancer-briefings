@@ -64,12 +64,29 @@ export default {
 	},
 	data() {
 		return {
+			animateView: this.animate,
+			animationDelay: "1.75s",
 			selectedFaction: {
 				type: Object,
 			},
 		};
 	},
+	created() {
+		this.setAnimate();
+	},
 	methods: {
+		setAnimate() {
+			if (this.animate) {
+				this.animateView = true;
+			}
+			let statusAnimated = window.sessionStorage.getItem("statusAnimated");
+			if (statusAnimated) {
+				this.animationDelay = "0s";
+			}
+			if (statusAnimated === null) {
+				window.sessionStorage.setItem("statusAnimated", true);
+			}
+		},
 		selectFaction(faction) {
 			this.selectedFaction = faction;
 		},

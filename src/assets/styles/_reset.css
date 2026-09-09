@@ -26,15 +26,33 @@ ol[role="list"] {
 }
 
 /* Set core root defaults */
+html {
+	height: 100%;
+}
+
 html:focus-within {
 	scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
+/* Set core body defaults.
+   Sized in percentages rather than 100vw/100vh on purpose: viewport units resolve
+   after the resize event fires, so the Vanta background (which measures
+   body.offsetWidth/offsetHeight on resize) would read stale dimensions and leave a
+   blank strip. Percentages also exclude the scrollbar, avoiding 100vw overflow. */
 body {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	text-rendering: optimizeSpeed;
+}
+
+/* Vanta measures body only while the resize event is in flight, and never again.
+   When shrinking, body is briefly narrower than it settles at, so the canvas can end
+   up a few px short and leak the page background at the edges. Pinning the canvas to
+   the viewport covers that; the backing store is only ever off by a few px, which is
+   imperceptible on an abstract background. */
+body > canvas.vanta-canvas {
+	width: 100vw !important;
+	height: 100vh !important;
 }
 
 /* A elements that don't have a class get default styles */
@@ -57,7 +75,14 @@ select {
 	font: inherit;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+/* Reduce transitions, looping animations and smooth scroll for people that prefer
+   not to see them.
+
+   Deliberately narrowed from the usual reset: `animation-duration` is NOT flattened
+   here. The boot sequence (header, sidebar, view panels in _animations.css) is the
+   point of this dashboard rather than decoration, and zeroing the duration made every
+   element snap to its end keyframe instead of playing. Looping animations are still
+   capped to a single iteration, so nothing animates indefinitely. */
 @media (prefers-reduced-motion: reduce) {
 	html:focus-within {
 		scroll-behavior: auto;
@@ -66,7 +91,6 @@ select {
 	*,
 	*::before,
 	*::after {
-		animation-duration: 0.01ms !important;
 		animation-iteration-count: 1 !important;
 		transition-duration: 0.01ms !important;
 		scroll-behavior: auto !important;

@@ -1,0 +1,113 @@
+{
+	"collectionItemType": "character",
+	"id": "e13f12d7-5d9d-4e10-a953-10f15fdaff6c",
+	"name": "Shameer Mctavish",
+	"description": "<p>Third granddaughter of the House of Glass, Shameer was raised from birth to </p>",
+	"note": "Noble Scion",
+	"alias": "Highlander",
+	"title": "Killer Queen",
+	"pronouns": "She/Her",
+	"save": {
+		"lastModified": 1786559253390,
+		"deleteTime": 0,
+		"created": 1778614649877,
+		"remote_code": "",
+		"remote_author": "",
+		"remote_collection": ""
+	},
+	"cloud": {
+		"_ts": {
+			"title": 1785867750518,
+			"narrative.relationships": 1785867750518,
+			"description": 1785873713047,
+			"narrative.textItems": 1785873713047,
+			"collectionItemType": 1779060804333,
+			"id": 1779060804333,
+			"name": 1779060804333,
+			"note": 1779060804333,
+			"alias": 1780094397714,
+			"pronouns": 1779060804333,
+			"save": 1779060804333,
+			"cloud": 1779060804333,
+			"img": 1779060804333,
+			"narrative": 1779060804333,
+			"folder": 1779060804333,
+			"narrative.relationships.f6a56de4-b427-4e3a-92ea-ccfc0d47282a.relationship": 1780094397714,
+			"narrative.relationships.42753245-aa56-421b-9d93-eb4966b60143.relationship": 1780094397714,
+			"narrative.relationships.8e6ad115-123c-43d3-8e77-669026f39309.id": 1780094397714,
+			"narrative.relationships.8e6ad115-123c-43d3-8e77-669026f39309.name": 1780094397714,
+			"narrative.relationships.8e6ad115-123c-43d3-8e77-669026f39309.relationship": 1780094397714,
+			"narrative.relationships.8e6ad115-123c-43d3-8e77-669026f39309.notes": 1780094397714,
+			"img.cloud_portrait": 1781479740319
+		},
+		"_lastHash": "970:1635432960",
+		"_lastHashes": {
+			"collectionItemType": "1f8hyf0",
+			"id": "14ow0ub",
+			"name": "otfetb",
+			"description": "11wqt8w",
+			"note": "3hkqt",
+			"alias": "vpw8e3",
+			"title": "1yoctq2",
+			"pronouns": "1v618ej",
+			"img.portrait": "3hkqt",
+			"img.avatar": "3t0l",
+			"img.cloud_portrait": "zlsjgo",
+			"narrative.textItems": "44p79p",
+			"narrative.labels": "3hntv",
+			"narrative.relationships.f6a56de4-b427-4e3a-92ea-ccfc0d47282a.id": "61cjg6",
+			"narrative.relationships.f6a56de4-b427-4e3a-92ea-ccfc0d47282a.name": "p6r7os",
+			"narrative.relationships.f6a56de4-b427-4e3a-92ea-ccfc0d47282a.relationship": "6wk0x8",
+			"narrative.relationships.f6a56de4-b427-4e3a-92ea-ccfc0d47282a.notes": "3hkqt",
+			"narrative.relationships.42753245-aa56-421b-9d93-eb4966b60143.id": "1mqqmew",
+			"narrative.relationships.42753245-aa56-421b-9d93-eb4966b60143.name": "104em6n",
+			"narrative.relationships.42753245-aa56-421b-9d93-eb4966b60143.relationship": "6wk0x8",
+			"narrative.relationships.42753245-aa56-421b-9d93-eb4966b60143.notes": "3hkqt",
+			"narrative.relationships.8e6ad115-123c-43d3-8e77-669026f39309.id": "14d3m3f",
+			"narrative.relationships.8e6ad115-123c-43d3-8e77-669026f39309.name": "gixlzh",
+			"narrative.relationships.8e6ad115-123c-43d3-8e77-669026f39309.relationship": "1n3vmx7",
+			"narrative.relationships.8e6ad115-123c-43d3-8e77-669026f39309.notes": "3hkqt",
+			"narrative.relationships.__ids": "42753245-aa56-421b-9d93-eb4966b60143,8e6ad115-123c-43d3-8e77-669026f39309,f6a56de4-b427-4e3a-92ea-ccfc0d47282a",
+			"narrative.clocks": "3hntv",
+			"narrative.tables": "3hntv",
+			"folder.folder": "21l1jf",
+			"folder.sortIndex": "3t05"
+		},
+		"_lastUploadedItemModified": 1786559253390,
+		"_lastSyncedUpdated": 1786559254170
+	},
+	"img": {
+		"portrait": "",
+		"cloud_portrait": "https://ds69h3g1zxwgy.cloudfront.net/cd2539ad-7efc-4244-a234-eb2fe124956b/images/ShamirMctavish.jpeg"
+	},
+	"narrative": {
+		"textItems": [
+			{ "header": "Appearance", "body": "" },
+			{ "header": "Personality", "body": "" }
+		],
+		"labels": [],
+		"relationships": [
+			{
+				"id": "f6a56de4-b427-4e3a-92ea-ccfc0d47282a",
+				"name": "Shao Hua Eisenhauer IV",
+				"relationship": "Squad Leader",
+				"notes": ""
+			},
+			{
+				"id": "42753245-aa56-421b-9d93-eb4966b60143",
+				"name": "Anatoly St. John",
+				"relationship": "Squad Leader",
+				"notes": ""
+			},
+			{
+				"id": "8e6ad115-123c-43d3-8e77-669026f39309",
+				"name": "Eri Velazques",
+				"relationship": "Upperclassman",
+				"notes": ""
+			}
+		],
+		"clocks": [],
+		"tables": []
+	},
+	"folder": { "folder": "Gladiator Squadron", "sortIndex": 0 }
+}

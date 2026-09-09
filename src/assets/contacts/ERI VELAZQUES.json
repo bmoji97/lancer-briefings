@@ -1,0 +1,69 @@
+{
+	"collectionItemType": "character",
+	"id": "8e6ad115-123c-43d3-8e77-669026f39309",
+	"name": "Eri Velazques",
+	"description": "<p>Young noble from a lowly branch family of the House of Stone. She worked hard to distinguish herself amongst her cohort, and was allowed entry to the vaunted Karrakin Cavalry College on Karrakis. Leaving the small and cold moon she called her homeworld for the first time in her life, she was amazed by the pastoral and varied Karrakis. She excelled at the College, making a name for herself as an able and talented pilot, though her upbringing in a cadet branch house led her to attach herself to her \"betters.\" Still, her initial goal of joining the Khayradin Elites of the House of Stone changed as she found herself wanting to venture outside of the Baronic Concern. Shortly after graduating she heard of her upperclassman Shameer McTavish, disillusioned with the Baronies and signing up to join the Union Auxiliaries. Thinking of no other good way to leave the Baronies, she soon followed suit.</p>",
+	"note": "Noble Retainer",
+	"alias": "Banneret",
+	"title": "Noblesse Oblige",
+	"pronouns": "She/Her",
+	"save": {
+		"lastModified": 1785869425370,
+		"deleteTime": 0,
+		"created": 1778616626332,
+		"remote_code": "",
+		"remote_author": "",
+		"remote_collection": ""
+	},
+	"cloud": {
+		"_ts": {
+			"title": 1785867750518,
+			"description": 1785873713047,
+			"narrative.textItems": 1785873713047
+		},
+		"_lastHash": "1705:1630768666",
+		"_lastHashes": {
+			"collectionItemType": "1f8hyf0",
+			"id": "14d3m3f",
+			"name": "gixlzh",
+			"description": "19ez1vd",
+			"note": "3hkqt",
+			"alias": "xbbda8",
+			"title": "8ekvcw",
+			"pronouns": "1v618ej",
+			"img.portrait": "3hkqt",
+			"img.avatar": "3t0l",
+			"img.cloud_portrait": "1l9fycz",
+			"narrative.textItems": "pft1cs",
+			"narrative.labels": "3hntv",
+			"narrative.relationships": "3hntv",
+			"narrative.clocks": "3hntv",
+			"narrative.tables": "3hntv",
+			"folder.folder": "21l1jf",
+			"folder.sortIndex": "3t05"
+		},
+		"_lastUploadedItemModified": 1785869425370,
+		"_lastSyncedUpdated": 1785873715271
+	},
+	"img": {
+		"portrait": "",
+		"cloud_portrait": "https://ds69h3g1zxwgy.cloudfront.net/cd2539ad-7efc-4244-a234-eb2fe124956b/images/EriVelazques.jpeg"
+	},
+	"narrative": {
+		"textItems": [
+			{
+				"header": "Appearance",
+				"body": "<p>Messy shoulder length dark hair, olive skin, slight but toned, medium height, light brown eyes, simple and comfortable clothes</p>"
+			},
+			{
+				"header": "Personality",
+				"body": "<p>Wide-eyed, naive, talkative, and curious. Becomes a different person while piloting: focused, efficient, and solemn.</p>"
+			}
+		],
+		"labels": [],
+		"relationships": [],
+		"clocks": [],
+		"tables": []
+	},
+	"folder": { "folder": "Gladiator Squadron", "sortIndex": 0 }
+}
